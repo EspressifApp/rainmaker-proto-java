@@ -31,16 +31,16 @@ dependencies {
     implementation 'com.google.protobuf:protobuf-javalite:3.14.0'
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//
-//                groupId = 'com.github.EspressifApp'
-//                artifactId = 'rainmaker-proto-java'
-//                version = '0.9.5'
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.EspressifApp'
+                artifactId = 'rainmaker-proto-java'
+                version = '0.9.5'
+            }
+        }
+    }
+}
