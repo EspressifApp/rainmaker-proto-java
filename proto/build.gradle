@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 30
 
     defaultConfig {
         minSdk 23
-        targetSdk 31
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -31,16 +31,16 @@ dependencies {
     implementation 'com.google.protobuf:protobuf-javalite:3.14.0'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.EspressifApp'
-                artifactId = 'rainmaker-proto-java'
-                version = '0.9.5'
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//
+//                groupId = 'com.github.EspressifApp'
+//                artifactId = 'rainmaker-proto-java'
+//                version = '0.9.5'
+//            }
+//        }
+//    }
+//}
